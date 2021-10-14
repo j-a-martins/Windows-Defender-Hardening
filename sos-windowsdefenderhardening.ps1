@@ -101,9 +101,9 @@ Set-MpPreference -CloudBlockLevel High
 #Set cloud block timeout to 1 minute
 Write-Host " -Setting cloud block timeout to 1 minute"
 Set-MpPreference -CloudExtendedTimeout 50
-#Schedule signature updates every 8 hours
-Write-Host " -Scheduling signature updates every 8 hours"
-Set-MpPreference -SignatureUpdateInterval 8
+#Schedule signature updates every 1 hour
+Write-Host " -Scheduling signature updates every 1 hour"
+Set-MpPreference -SignatureUpdateInterval 1
 #Randomize Scheduled Task Times
 Write-Host " -Randomizing Scheduled Task Times"
 Set-MpPreference -RandomizeScheduleTaskTimes $true
